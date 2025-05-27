@@ -178,3 +178,8 @@
     transform: translateY(0);
   }
 }
+
+
+.contact-container{
+  margin: 0 auto;
+}
