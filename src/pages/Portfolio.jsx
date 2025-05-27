@@ -1,13 +1,23 @@
 import React from 'react';
 import './Portfolio.css'; // We'll create this CSS file next
 
+import icon1 from '/public/assets/img/icon1.png';
+import myphoto from '/public/assets/img/my_photo.png';
+import desarrollo from '/public/assets/img/desarrollo.jpg';
+import img1 from '/public/assets/img/trabajo1.png'
+import img2 from '/public/assets/img/trabajo2.png'
+import img3 from '/public/assets/img/trabajo3.png'
+import img4 from '/public/assets/img/trabajo4.png'
+import img5 from '/public/assets/img/trabajo5.png'
+import img6 from '/public/assets/img/trabajo6.png'
+
 const Portfolio = () => {
   return (
     <div className="portfolio-container">
       <header id="HEADER" className='fade-in'>
         <div className="header-main">
           <div className="portafolio-pa">Portafolio</div>
-          <img id="main-icon" src="/src/assets/img/icon1.png" alt="Main Icon" />
+          <img id="main-icon" src={icon1} alt="Main Icon" />
         </div>
       </header>
       
@@ -30,7 +40,7 @@ const Portfolio = () => {
             <button className="btn-conocer-mas"><a href="#TRABAJOS">Conocer más</a></button>
           </div>
           <div className="my-photo-container">
-            <img className="my-photo" src="/src/assets/img/my_photo.png" alt="My Photo" />
+            <img className="my-photo" src={myphoto} alt="My Photo" />
           </div>
         </div>
       </section>
@@ -38,7 +48,7 @@ const Portfolio = () => {
       <section id="ME" className='fade-in'>
         <div className="me-main">
           <div className="jjimg">
-            <img src="/src/assets/img/desarrollo.jpg" alt="Desarrollo" />
+            <img src={desarrollo} alt="Desarrollo" />
           </div>
           <div className="me-text-container">
             <h1>Sobre mí</h1>
@@ -54,15 +64,15 @@ const Portfolio = () => {
           <h1>Proyectos</h1>
           <div className="proyectos-container">
             {[
-              { img: "trabajo1.png", desc: "XcelFusion - App de manejo de archivos Excel." },
-              { img: "trabajo2.png", desc: "Tienda deportiva - App POS para el manejo de una tienda." },
-              { img: "trabajo3.png", desc: "Bingo - Proyecto para el desarrollo de actividades Bingo." },
-              { img: "trabajo4.png", desc: "WebSena - Página Web con respecto al programa ADSO." },
-              { img: "trabajo5.png", desc: "Crónicas de ADSO - Videojuego plataformero con temática ADSO." },
-              { img: "trabajo6.png", desc: "CRUD - Aplicación de manejo de usuarios." }
+              { img: img1, desc: "XcelFusion - App de manejo de archivos Excel." },
+              { img: img2, desc: "Tienda deportiva - App POS para el manejo de una tienda." },
+              { img: img3, desc: "Bingo - Proyecto para el desarrollo de actividades Bingo." },
+              { img: img4, desc: "WebSena - Página Web con respecto al programa ADSO." },
+              { img: img5, desc: "Crónicas de ADSO - Videojuego plataformero con temática ADSO." },
+              { img: img6, desc: "CRUD - Aplicación de manejo de usuarios." }
             ].map((proyecto, index) => (
               <div className="xtrabajo" key={index}>
-                <img src={`/src/assets/img/${proyecto.img}`} alt={`Proyecto ${index + 1}`} />
+                <img src={proyecto.img} alt={`Proyecto ${index + 1}`} />
                 <div>{proyecto.desc}</div>
               </div>
             ))}
