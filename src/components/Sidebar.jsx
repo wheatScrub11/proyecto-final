@@ -24,8 +24,8 @@ const Sidebar = ({ currentPage, setCurrentPage }) => {
 
   const menuItems = [
     { id: "home", icon: <FaHome />, label: "Home" },
-    { id: "portfolio", icon: <FaBriefcase />, label: "Portfolio" },
-    { id: "contact", icon: <FaEnvelope />, label: "Contact" },
+    { id: "portfolio", icon: <FaBriefcase />, label: "Portafolio" },
+    { id: "contact", icon: <FaEnvelope />, label: "Contacto" },
     { id: "pomodoro", icon: <MdTimer />, label: "Pomodoro" },
     { id: "calculadora", icon: <FaCalculator />, label: "Calculadora" },
     { id: "pacman", icon: <ImPacman />, label: "Pacman" },
