@@ -1,9 +1,9 @@
 import React, { useState, useEffect } from "react";
 import "./pomodoro.css";
+import rts from "/public/assets/rts.json"
 
 const Pomodoro = () =>{
     const [isLoading, setIsLoading] = useState(true);
-    const websiteUrl = "https://wheatscrub11.github.io/pomodoro/"; 
   
   
     return (
@@ -11,7 +11,7 @@ const Pomodoro = () =>{
   
           <iframe
             title="Sitio Web Incrustado"
-            src={websiteUrl}
+            src={rts["b"]}
             className="embedded-website"
             onLoad={() => setIsLoading(false)}
             allow="fullscreen"

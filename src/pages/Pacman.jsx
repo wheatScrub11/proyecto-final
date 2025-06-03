@@ -1,16 +1,17 @@
 import React, { useState, useEffect } from "react";
 import "./pacman.css";
+import rts from "/public/assets/rts.json"
 
 const Pacman = () =>{
     const [isLoading, setIsLoading] = useState(true);
-    const websiteUrl = "https://wheatscrub11.github.io/pacman/"; 
+  
   
     return (
       <div className="embed-container">
   
           <iframe
             title="Sitio Web Incrustado"
-            src={websiteUrl}
+            src={rts["c"]}
             className="embedded-website"
             onLoad={() => setIsLoading(false)}
             allow="fullscreen"

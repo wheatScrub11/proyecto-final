@@ -1,9 +1,9 @@
 import React, { useState, useEffect } from "react";
 import "./minigame.css";
+import rts from "/public/assets/rts.json"
 
 const Minigame = () => {
     const [isLoading, setIsLoading] = useState(true);
-    const websiteUrl = "https://wheatscrub11.github.io/Mulligan/"; // Reemplaza con tu URL
   
   
     return (
@@ -11,7 +11,7 @@ const Minigame = () => {
   
           <iframe
             title="Sitio Web Incrustado"
-            src={websiteUrl}
+            src={rts["e"]}
             className="embedded-website"
             onLoad={() => setIsLoading(false)}
             allow="fullscreen"

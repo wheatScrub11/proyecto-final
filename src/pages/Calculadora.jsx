@@ -1,9 +1,10 @@
 import React, { useState, useEffect } from "react";
 import "./calculadora.css";
+import rts from "/public/assets/rts.json"
 
 const Calculadora = () =>{
     const [isLoading, setIsLoading] = useState(true);
-    const websiteUrl = "https://wheatscrub11.github.io/Calculator/"; 
+
   
   
     return (
@@ -11,7 +12,7 @@ const Calculadora = () =>{
   
           <iframe
             title="Sitio Web Incrustado"
-            src={websiteUrl}
+            src={rts["a"]}
             className="embedded-website"
             onLoad={() => setIsLoading(false)}
             allow="fullscreen"
