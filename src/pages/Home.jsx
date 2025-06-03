@@ -90,26 +90,26 @@ const Home = () => {
             <p>
               Nuevas herramientas con IA están ayudando a automatizar tareas repetitivas y mejorar la productividad de los desarrolladores.
             </p>
-            <a href="https://example.com/noticia1" target="_blank" rel="noreferrer">Leer más</a>
+            <a href="https://www.ituser.es/estrategias-digitales/2024/07/robotica-y-programacion-competencias-clave-del-futuro-digital-de-la-educacion" target="_blank" rel="noreferrer">Leer más</a>
           </article>
           <article className="news-card">
             <h3>El auge de las metodologías ágiles en empresas tecnológicas</h3>
             <p>
               Cada vez más equipos adoptan Scrum y Kanban para acelerar el desarrollo y mejorar la calidad.
             </p>
-            <a href="https://example.com/noticia2" target="_blank" rel="noreferrer">Leer más</a>
+            <a href="https://www.ituser.es/en-cifras/2024/09/la-programacion-informatica-supone-el-268-del-total-de-empleos-tic" target="_blank" rel="noreferrer">Leer más</a>
           </article>
           <article className="news-card">
             <h3>Herramientas open source que todo desarrollador debería conocer</h3>
             <p>
               Exploramos las herramientas gratuitas que están cambiando el panorama del desarrollo.
             </p>
-            <a href="https://example.com/noticia3" target="_blank" rel="noreferrer">Leer más</a>
+            <a href="https://www.ituser.es/actualidad/2024/03/4-aplicaciones-gpt-en-el-desarrollo-del-software" target="_blank" rel="noreferrer">Leer más</a>
           </article>
         </div>
       </section>
 
-      {/* 4. Educadores recomendados - Versión Mejorada */}
+      {/* 4. Educadores recomendados */}
       <section className="section educators-section fade-in">
         <h2>Educadores recomendados</h2>
         <div className="educators-list">
@@ -233,9 +233,9 @@ const Home = () => {
         </div>
       </section>
 
-      {/* 6. Sección creativa libre */}
+      {/* 6. Comunidades*/}
       <section className="section community-section fade-in">
-        <h2>Únete a la comunidad</h2>
+        <h2>Indaga en comunidades</h2>
         <div className="community-grid">
           <div className="community-card">
             <FaDiscord className="community-icon" />

@@ -43,7 +43,7 @@ const Contact = () => {
                 >
                   <FaLinkedin />
                 </a>
-                <a href="https://github.com/" target="_blank" rel="noreferrer">
+                <a href="https://github.com/wheatScrub11" target="_blank" rel="noreferrer">
                   <FaGithub />
                 </a>
                 <a href="https://twitter.com/" target="_blank" rel="noreferrer">

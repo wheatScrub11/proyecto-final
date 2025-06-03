@@ -114,3 +114,83 @@
 
 
 
+
+
+
+.mobile-topbar {
+  display: none;
+  height: 60px;
+  background: #2c3e50;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 100;
+}
+
+.mobile-menu-toggle {
+  background: transparent;
+  border: none;
+  color: white;
+  font-size: 1.5rem;
+  padding: 15px;
+  cursor: pointer;
+}
+
+.sidebar {
+  width: 250px;
+  background: #2c3e50;
+  color: white;
+  transition: all 0.3s ease;
+  position: relative;
+}
+
+.sidebar.collapsed {
+  width: 80px;
+}
+
+/* Mobile styles */
+@media (max-width: 768px) {
+  .app {
+    flex-direction: column;
+    padding-top: 60px; 
+  }
+
+  .mobile-topbar {
+    display: block;
+  }
+
+  .sidebar {
+    position: fixed;
+    top: 60px;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: auto;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease;
+    z-index: 99;
+  }
+
+  .sidebar.mobile-open {
+    max-height: 500px;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.2);
+  }
+
+  .sidebar.collapsed {
+    width: 100%;
+  }
+
+  .menu-list {
+    padding: 10px 0 !important;
+  }
+
+  .menu-item {
+    justify-content: center;
+  }
+
+  .toggle-btn {
+    display: none;
+  }
+}
